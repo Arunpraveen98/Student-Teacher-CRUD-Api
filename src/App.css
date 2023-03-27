@@ -1,38 +1,589 @@
 .App {
   text-align: center;
 }
+/* ------------------------------------------------------- */
+/* LOGIN PORTAL */
+.login-protal {
+  background-image: url("https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.welcome-text {
+  color: yellow;
+}
+.card-body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(20, 12, 12, 1) 97%
+  );
+}
+.dash-sub-title {
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Kalam", cursive;
+  margin-top: 10px;
+  font-size: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .dash-sub-title {
+    font-size: 12px;
+    text-align: start;
+  }
+}
+/*END => LOGIN PORTAL */
+/* ------------------------------------------------------- */
+/* CONFITTE EFFECTS */
+.confetti-animate {
+  width: 1500px;
+  height: 480px;
+}
+/* CONFITTE MEDIA QUERY */
+@media only screen and (max-width: 500px) {
+  .confetti-animate {
+    width: 340px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .confetti-animate {
+    width: 550px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .confetti-animate {
+    width: 900px;
+    height: 400px;
+  }
+}
+/*END => CONFITTE EFFECTS */
+/* ------------------------------------------------------- */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* DASHBOARD-TITLE */
+
+.lottie-welcome {
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+.side-list-item {
+  display: block;
+  font-weight: bold;
+}
+.dash-title {
+  font-family: "Babylonica", cursive;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 68px;
+  background: #ff0000;
+  background: repeating-linear-gradient(
+    to top,
+    #ff0000 28%,
+    #ffff00 20%,
+    #ff0000 90%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .dash-title {
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .dash-title {
+    font-size: 20px;
+  }
+}
+/* ------------------------------------------------------- */
+/* DASHBOARD-SIDEBAR */
+
+.sidebar-icon {
+  width: 20px;
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.765);
+}
+.sb-admin-icon {
+  width: 30px;
+  height: 30px;
+}
+.user-account-icon {
+  margin-right: 8px;
+}
+.sidebar-color {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* END => DASHBOARD-SIDEBAR */
+/* ------------------------------------------------------- */
+
+/* ADD DATA AND EDIT DATA => SHADOW */
+.input-data-form {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.add-edit-title {
+  color: black;
+}
+@media only screen and (max-width: 620px) {
+  .add-edit-title {
+    font-size: large;
+  }
+}
+label {
+  color: rgba(0, 0, 0, 0.849);
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+/* END => ADD DATA AND EDIT DATA => SHADOW */
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* STUDENT LISTS... */
+
+.component-title {
+  font-weight: bolder;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.135) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  letter-spacing: 2px;
+  padding: 10px;
+  color: #0e0e0e;
+  background-color: lightgray;
+}
+
+.student-card {
+  width: 240px;
+  height: 290px;
+  padding: 2px;
+  /* background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%); */
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  border-style: ridge;
+  font-family: inherit;
+  display: inline-block;
+  margin: 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media only screen and (max-width: 768px) {
+  .component-title {
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+
+  .student-card {
+    width: 240px;
+    height: 300px;
+    padding: 2px;
+    margin: 10px;
+  }
+
+  .key-name {
+    font-size: 10px;
+    padding: 2px;
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+
+  .key-value {
+    padding: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .student-img {
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    margin-top: 20px;
+  }
+
+  .card-button {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 10px;
+    padding: 3px !important;
+    font-weight: 400;
+  }
+  .card-buttons {
+    margin-top: 12px;
+  }
+  .crud-btn-icon {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    bottom: 0px;
+  }
+}
+/* ----------------- */
+/* INSET-SHADOW EFFECT FOR STUDENT LISTS CARD */
+
+.shadow-inset-center:hover {
+  -webkit-animation: shadow-inset-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* END =>  INSET-SHADOW EFFECT */
+/* ----------------- */
+
+.key-name {
+  background-color: #1e1d1da8;
+  font-size: 12px;
+  padding: 3px;
+  color: yellow;
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.key-value {
+  color: rgb(11, 11, 11);
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0px;
+  padding: 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.student-img {
+  width: 80px;
+  height: 80px;
+  padding: 3px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border-style: outset;
+  border-width: 5px solid yellow;
+  background-color: gold;
+}
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-button {
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-top: 5px;
+  padding: 8px !important;
+  border-radius: 5px;
+  border: 1px solid rgba(124, 233, 255, 0.868);
+  background-color: lightcyan;
+  color: #111111;
+  font-weight: 600;
+}
+.card-button:hover {
+  background: #212121;
+  border: 1px solid rgba(124, 233, 255, 0.868);
+  color: #ffffff;
+}
+.crud-btn-icon {
+  width: 13px;
+  height: 13px;
+  position: relative;
+  bottom: 3px;
+}
+.data-loading {
+  background: rgba(13, 12, 12, 0.123);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* END => STUDENT LISTS... */
+/* ------------------------------------------------------- */
+
+/* ADD_DATA AND EDIT_DATA => SUBMIT AND UPADTE LOADER */
+.form-div-element {
+  background: linear-gradient(90deg, #fbfbfb9c 0%, #feffff9c 100%);
+}
+.btn-primary:hover {
+  background-color: green !important;
+}
+.loader {
+  width: 6em;
+  height: 6em;
+  font-size: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader .face {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  animation: animate023845 3s linear infinite;
+}
+
+.loader .face:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  color: gold;
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  --deg: -45deg;
+  animation-direction: normal;
+}
+
+.loader .face:nth-child(2) {
+  width: 70%;
+  height: 70%;
+  color: lime;
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0em 0em 0.2em;
+  --deg: -135deg;
+  animation-direction: reverse;
+}
+
+.loader .face .circle {
+  position: absolute;
+  width: 50%;
+  height: 0.1em;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: rotate(var(--deg));
+  transform-origin: left;
+}
+
+.loader .face .circle::before {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 0 2em, 0 0 4em, 0 0 6em, 0 0 8em, 0 0 10em,
+    0 0 0 0.5em rgba(255, 255, 0, 0.1);
+}
+
+@keyframes animate023845 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* END => ADD_DATA AND EDIT_DATA => SUBMIT AND UPADTE LOADER */
+/* ------------------------------------------------------- */
+
+/* SELECTED-PROFILE */
+
+/* media query */
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .profile {
+    padding: 10px;
+    font-size: large;
+  }
+  .selected-cards {
+    width: 250px !important;
+    height: 430px !important;
+  }
+  .card-info {
+    padding: 0 1rem;
+    position: relative !important;
+    bottom: 50px !important;
+  }
+  .key-title {
+    font-size: 14px !important;
+
+    letter-spacing: 0.05rem;
+  }
+
+  .key-body {
+    font-size: 14px !important;
+  }
+  .back-btn {
+    width: 70px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+    padding-right: 10px !important;
+    position: relative !important;
+    bottom: 0px !important;
+  }
+}
+
+.profile {
+  font-family: "Rowdies", cursive;
+  padding: 10px;
+  letter-spacing: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.selected-cards {
+  width: 315px;
+  height: 460px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  overflow: visible;
+  box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3),
+    0px 15px 12px 0px rgba(0, 0, 0, 0.22);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5em;
+  padding: 0 1rem;
+  position: relative;
+  bottom: 50px;
+}
+
+.card-image {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  transform: translateY(-50%);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border-style: outset;
+  border-width: 5px;
+  background-color: rgba(34, 220, 211, 0.616);
+}
+
+.card-image::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 1rem solid #e8e8e8;
+}
+/* --------------------------- */
+/*STUDENET PROFILE Text*/
+
+.key-title {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1em;
+  display: inline-flex;
+  text-align: start;
+  font-weight: bold;
+  color: hsl(63, 98%, 54%);
+  letter-spacing: 0.05rem;
+}
+
+.key-body {
+  font-size: 1em;
+
+  display: inline-flex;
+  text-align: justify;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+
+/* END => STUDENET PROFILE Text*/
+/* --------------------------- */
+
+/* BACK BUTTON */
+
+.back-btn {
+  width: 90px;
+  height: 40px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background: rgb(6, 14, 131);
+  background: linear-gradient(
+    0deg,
+    rgba(6, 14, 131, 1) 0%,
+    rgba(12, 25, 180, 1) 100%
+  );
+  border: none;
+  position: relative;
+  bottom: 0px;
+}
+
+.back-btn:hover {
+  background: rgb(17, 17, 17);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   color: white;
+  text-decoration-line: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* END => BACK BUTTON */
+/* --------------------------- */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*END => SELECTED-PROFILE */
+/* ----------------------------------------------------------------- */
